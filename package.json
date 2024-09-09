@@ -1,0 +1,29 @@
+{
+  "name": "RestaurantPage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "webpack-cli": "^5.1.4"
+  },
+  "devDependencies": {
+    "server": "^1.0.39",
+    "webpack": "^5.94.0",
+    "webpack-dev-server": "^5.1.0",
+    "webpack-server": "^0.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henryclyde/RestaurantPage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/henryclyde/RestaurantPage/issues"
+  },
+  "homepage": "https://github.com/henryclyde/RestaurantPage#readme"
+}
