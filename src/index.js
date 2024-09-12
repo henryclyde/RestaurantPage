@@ -9,18 +9,20 @@ let home = document.getElementById("home");
 let menu = document.getElementById("menu");
 let about = document.getElementById("about");
 
+let buildHome = function() {
+    while(content.firstChild) {
+        content.removeChild(content.firstChild);
+    }
+    let title = document.createElement("h1");
+    title.textContent = "Welcome to Athen'ssss Garden";
+    content.appendChild(title);
+    let description = document.createElement("p");
+    description.textContent = "Athen's Garden provides a variety of dishes, from ancient delicassies to modern favorites, our menu boasts a healthy spectrum of mediteranean cuisine.";
+    content.appendChild(description); 
+}
+
 //Build Home page
-home.addEventListener("click", () => {
-        while(content.firstChild) {
-            content.removeChild(content.firstChild);
-        }
-        let title = document.createElement("h1");
-        title.textContent = "Welcome to Athen's Garden";
-        content.appendChild(title);
-        let description = document.createElement("p");
-        description.textContent = "Athen's Garden provides a variety of dishes, from ancient delicassies to modern favorites, our menu boasts a healthy spectrum of mediteranean cuisine.";
-        content.appendChild(description); 
-});
+home.addEventListener("click", buildHome);
 
 //Build Menu
 menu.addEventListener("click", () => {
@@ -48,3 +50,4 @@ about.addEventListener("click", () => {
     content.appendChild(description); 
 });
 
+buildHome();
